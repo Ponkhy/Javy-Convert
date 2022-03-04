@@ -7,17 +7,17 @@ It will also include a thumbnail into the .mp3 file.
 
 **Docker Compose:**
 
-    version: "3"
-    services:
-    	javy-convert:
-    		image: ponkhy/javy-convert:latest
-    		container_name: Javy-Convert
-    		restart: unless-stopped
-    		volumes:
-    			-  YOUR_WATCH_FOLDER:/watch
-    			-  YOUR_CONVERT_FOLDER:/convert
-    			-  YOUR_MP3_FOLDER:/to
-    			-  YOUR_ORIGINAL_FODLER:/move
+  version: "3"
+  services:
+    javy-convert:
+    	image: ponkhy/javy-convert:latest
+    	container_name: Javy-Convert
+    	restart: unless-stopped
+    	volumes:
+    		-  YOUR_WATCH_FOLDER:/watch
+    		-  YOUR_CONVERT_FOLDER:/convert
+    		-  YOUR_MP3_FOLDER:/to
+    		-  YOUR_ORIGINAL_FODLER:/move
 
 The path must end **without "/" slash**!
 
